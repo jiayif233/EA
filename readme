@@ -1,0 +1,5 @@
+Python, 
+PyTorch, 
+torchvision,
+pymoo == 0.3.0,
+bitstring
