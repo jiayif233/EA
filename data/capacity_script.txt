@@ -1,0 +1,18 @@
+// Open the home page in a new tab
+win1 = window.open("https://cloud.oracle.com/");
+
+// At every 30 seconds, reload the home page and click "Create"
+timer1 = setInterval(() => {
+    win1.location.reload();
+    console.log("Refreshed");
+    var v = document.querySelector(".oui-button-primary");
+    if (v && v.textContent == "Create") {
+        v.click();
+        console.log("!!! clicked");
+    } else
+        console.log("!!! no button");
+}, 30000)
+
+
+
+https://www.reddit.com/r/oraclecloud/comments/zf0tje/out_of_capacity_for_shape_vmstandarda1flex/
